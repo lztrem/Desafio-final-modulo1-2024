@@ -39,7 +39,7 @@
 
     article{
         width: 20%;
-        height: 80%;
+        height: 50%;
         background-color: #0157944D;
         display: flex;
         flex-direction: column;
@@ -48,7 +48,82 @@
         border-radius: 10px;
         p{
             text-align: center;
-            font-size: 25px;
+            font-size: 18px;
         }
+    }
+}
+
+@media(max-width: 1200px){
+    .banner{
+        background-size: cover;
+    }
+    .BoxCard{
+        article{
+            p{
+                font-size: 1.4vw;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 860px){
+    .banner{
+        background-position: center;
+        // background-image: url("../../assets/secondBanner.png");
+        
+    }
+
+    .BoxCard{
+        article{
+            width: 22%;
+            p{
+                font-size: 1.6vw;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 760px){
+    .banner{
+        justify-content: center;
+        h2{
+            width: 90%;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    .devoDoar{
+        height: auto;
+        div{
+            justify-content: center;
+            h2{
+                margin-left: 0;
+            }
+        }
+    }
+
+    .BoxCard{
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 65vh;
+
+        article{
+            width: 230px;
+            height: 30vh;
+            
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 477px){
+    .BoxCard{
+        height: auto;
+        margin-bottom: 10px;
     }
 }
